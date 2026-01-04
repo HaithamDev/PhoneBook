@@ -19,6 +19,11 @@ namespace ERP.Infrastructure
             services.AddScoped<IUnitOfWork>(provider => provider.GetRequiredService<ApplicationDbContext>());
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
+            services.AddScoped<IEncryptionService>(provider => new EncryptionService(configuration["Encryption:Key"] ?? "defaultEncryptionKey"));
+            services.AddScoped<IAuthenticationService, AuthenticationService>();
+            services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IFinanceService, FinanceService>();
+
             return services;
         }
     }
