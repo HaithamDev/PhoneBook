@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Domain", "src\ERP.Domain\ERP.Domain.csproj", "{GUID1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Application", "src\ERP.Application\ERP.Application.csproj", "{GUID2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.Infrastructure", "src\ERP.Infrastructure\ERP.Infrastructure.csproj", "{GUID3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP.API", "src\ERP.API\ERP.API.csproj", "{GUID4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{GUID1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{GUID1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{GUID1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{GUID1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{GUID2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{GUID2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{GUID2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{GUID2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{GUID3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{GUID3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{GUID3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{GUID3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{GUID4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{GUID4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{GUID4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{GUID4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
