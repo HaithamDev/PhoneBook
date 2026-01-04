@@ -16,6 +16,22 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Global Exception Handler
+app.Use(async (context, next) =>
+{
+    try
+    {
+        await next();
+    }
+    catch (Exception ex)
+    {
+        var logger = context.RequestServices.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An unhandled exception has occurred.");
+        context.Response.StatusCode = 500;
+        await context.Response.WriteAsync("An internal server error has occurred.");
+    }
+});
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
